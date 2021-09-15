@@ -28,8 +28,8 @@ public class Singin extends AppCompatActivity {
 
                         //write here your code for fire base.
 
-                      Intent intent=new Intent(getApplicationContext(),Otpsingin.class);
-                       startActivity(intent);
+                      //Intent intent=new Intent(getApplicationContext(),Otpsingin.class);
+                       //startActivity(intent);
 
                     }else {
                         Toast.makeText(Singin.this, "Please enter correct number", Toast.LENGTH_SHORT).show();

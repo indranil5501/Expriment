@@ -29,8 +29,8 @@ public class Otpsingin extends AppCompatActivity {
                         //write here your code for fire base.
 
 
-                       Intent intent=new Intent(getApplicationContext(), Demone.class);
-                       startActivity(intent);
+                       //Intent intent=new Intent(getApplicationContext(), Demone.class);
+                       //startActivity(intent);
 
                     }else {
                         Toast.makeText(Otpsingin.this, "Please enter the PASSWORD", Toast.LENGTH_SHORT).show();
