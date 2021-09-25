@@ -118,17 +118,32 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/login_button"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="@string/login"
-            android:textSize="20sp"
-            android:fontFamily="@font/baloo_chettan"
-            android:background="@drawable/bgbot"
-            android:layout_margin="40dp"/>
+            android:layout_height="wrap_content">
 
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/login"
+                android:textSize="20sp"
+                android:fontFamily="@font/baloo_chettan"
+                android:background="@drawable/bgbot"
+                android:layout_margin="40dp"/>
+
+
+
+            <ProgressBar
+                android:id="@+id/prgbar_login"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
 
 
     </LinearLayout>

@@ -50,6 +50,8 @@
             android:fontFamily="@font/baloo_chettan"
             android:layout_marginTop="10dp"/>
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,8 +69,7 @@
                 android:text="+91"
                 android:textSize="30dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/input_num"
@@ -87,18 +88,31 @@
                 />
     </LinearLayout>
 
-        <Button
-            android:id="@+id/otp_bot"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="@string/get_otp"
-            android:textSize="20sp"
-            android:fontFamily="@font/baloo_chettan"
-            android:background="@drawable/bgbot"
-            android:layout_margin="40dp"/>
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/otp_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/get_otp"
+                android:textSize="20sp"
+                android:fontFamily="@font/baloo_chettan"
+                android:background="@drawable/bgbot"
+                android:layout_margin="40dp"/>
 
 
+
+            <ProgressBar
+                android:id="@+id/prgbar_singin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
 
     </LinearLayout>
 </ScrollView>

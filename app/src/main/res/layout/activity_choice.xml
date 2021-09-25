@@ -39,7 +39,7 @@
             android:layout_margin="40dp"
             android:background="@drawable/bgbot"
             android:fontFamily="@font/baloo_chettan"
-            android:text="@string/sing_in"
+            android:text="@string/sing_up"
             android:textAlignment="center"
             android:textSize="20sp" />
 

@@ -70,15 +70,33 @@
 
     </LinearLayout>
 
-        <Button
-            android:id="@+id/otp_verification"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:background="@drawable/bgbot"
-            android:fontFamily="@font/baloo_chettan"
-            android:text="@string/verifi"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/otp_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:background="@drawable/bgbot"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/verifi"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+
+            <ProgressBar
+                android:id="@+id/prgbar_otpsingin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
     </LinearLayout>
 </ScrollView>

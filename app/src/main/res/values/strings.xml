@@ -19,7 +19,7 @@
     <string name="user_id">USER-ID</string>
     <string name="login">Login</string>
     <string name="jbb">New</string>
-    <string name="confirm">Confirm</string>
+
     <string name="submit">Submit</string>
     <string name="title_activity_displayinfo">Displayinfo</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -33,4 +33,10 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="demo">Demo</string>
+    <string name="create_password">Create Password</string>
+    <string name="enter_your_password_for_your_new_paperclipa_server_provider_account">Enter your password for your new Paperclipa server provider account</string>
+    <string name="passwordd">Password</string>
+    <string name="submitt">SUBMIT</string>
+    <string name="confirm">Confirm</string>
+    <string name="sing_up">sing UP</string>
 </resources>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
@@ -15,6 +16,7 @@ public class Createpassword extends AppCompatActivity {
     EditText newpass;
     EditText confpass;
     Button sub_npas;
+    ProgressBar prgbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class Createpassword extends AppCompatActivity {
         newpass= findViewById(R.id.new_pass);
         confpass =findViewById(R.id.confirm_pass);
         sub_npas= findViewById(R.id.submit_new_pass);
+        prgbar=findViewById(R.id.prgbar_createpass);
 
         sub_npas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,11 +34,14 @@ public class Createpassword extends AppCompatActivity {
                 if(!newpass.getText (). toString().trim(). isEmpty()){
                     if((newpass.getText().toString().trim()).equals((confpass.getText().toString().trim()))){
 
+                        prgbar.setVisibility(View.VISIBLE);
+                       sub_npas.setVisibility(View.INVISIBLE);
+
                         //write here your code for fire base.
 
 
-                        Intent intent=new Intent(getApplicationContext(), Demone.class);
-                        startActivity(intent);
+                       //Intent intent=new Intent(getApplicationContext(), Demone.class);
+                       //startActivity(intent);
 
                     }else {
                         Toast.makeText(Createpassword.this, "PASSWORD not matched", Toast.LENGTH_SHORT).show();
