@@ -38,7 +38,7 @@ public class Otpsingin extends AppCompatActivity {
                         //write here your code for fire base.
 
 
-                       Intent intent=new Intent(getApplicationContext(), Demone.class);
+                       Intent intent=new Intent(getApplicationContext(), Createpassword.class);
                        startActivity(intent);
 
                     }else {
