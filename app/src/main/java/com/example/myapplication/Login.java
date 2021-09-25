@@ -28,10 +28,10 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 if(!input_number. getText (). toString().trim(). isEmpty()&&!input_password. getText (). toString().trim(). isEmpty()){
 
-                    //write your code here
+                    //write your code here for fire base
 
-                    Intent intent=new Intent(getApplicationContext(),Demone.class);
-                    startActivity(intent);
+                    //Intent intent=new Intent(getApplicationContext(),Demone.class);
+                    //startActivity(intent);
 
                     }else {
                         Toast.makeText(Login.this, "Please enter the PASSWORD", Toast.LENGTH_SHORT).show();

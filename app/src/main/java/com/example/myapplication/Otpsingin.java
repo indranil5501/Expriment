@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Otpsingin extends AppCompatActivity {
     EditText input_otp;
     Button verifi_button;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,12 @@ public class Otpsingin extends AppCompatActivity {
         setContentView(R.layout.activity_otpsingin);
         input_otp= findViewById(R.id.write_otp);
         verifi_button=findViewById(R.id.otp_verification);
+
+        //to get the number from singin(up) to otp verification number
+        TextView textView=findViewById(R.id.show_num);
+        textView.setText(String.format("+91-%s",getIntent().getStringExtra("mobile")));
+
+
 
         verifi_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,15 +38,15 @@ public class Otpsingin extends AppCompatActivity {
                         //write here your code for fire base.
 
 
-                       //Intent intent=new Intent(getApplicationContext(), Demone.class);
-                       //startActivity(intent);
+                       Intent intent=new Intent(getApplicationContext(), Demone.class);
+                       startActivity(intent);
 
                     }else {
-                        Toast.makeText(Otpsingin.this, "Please enter the PASSWORD", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Otpsingin.this, "NOT MATCHING CHECK AGAIN", Toast.LENGTH_SHORT).show();
                     }
 
                 }else {
-                    Toast.makeText(Otpsingin.this, "NOT MATCHING CHECK AGAIN", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Otpsingin.this, "PLEASE ENTER OTP", Toast.LENGTH_SHORT).show();
                 }
             }
         });

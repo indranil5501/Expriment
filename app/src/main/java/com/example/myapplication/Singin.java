@@ -13,6 +13,7 @@ public class Singin extends AppCompatActivity {
     EditText enter_num;
     Button otp_bot;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +27,13 @@ public class Singin extends AppCompatActivity {
                 if(!enter_num. getText (). toString().trim(). isEmpty()){
                     if((enter_num.getText().toString().trim()).length()==10){
 
-                        //write here your code for fire base.
+                        //write here your code for fire base if not required ignore.
 
-                      //Intent intent=new Intent(getApplicationContext(),Otpsingin.class);
-                       //startActivity(intent);
+
+
+                      Intent intent=new Intent(getApplicationContext(),Otpsingin.class);
+                      intent.putExtra("mobile",enter_num.getText().toString());
+                      startActivity(intent);
 
                     }else {
                         Toast.makeText(Singin.this, "Please enter correct number", Toast.LENGTH_SHORT).show();
